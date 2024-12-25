@@ -69,7 +69,7 @@ function Footer() {
                 Pricing
               </li>
               <li className="hover:text-main-colo-2 duration-300 cursor-pointer">
-                404
+                learning
               </li>
             </ul>
           </div>

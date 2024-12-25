@@ -3,7 +3,6 @@ import cart from "../../../assets/images/Home1/Cart-icon.svg";
 import curruncy from "../../../assets/images/Home1/curruncy.svg";
 import { FaAngleDown, FaAngleRight, FaArrowRight } from "react-icons/fa";
 import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
 function Navbar() {
   // collapse state
   const [isOpen, setIsOpen] = useState(false);
@@ -68,12 +67,12 @@ function Navbar() {
         {/* menus start  */}
         <ul className="hidden lg:flex items-center justify-center gap-12 text-white font-sans font-medium">
           <li className="relative cursor-pointer group hover:text-main-colo-2 duration-300">
-            <NavLink
-              to="/"
+            <a
+             href="#"
               className={({ isActive }) => (isActive ? "text-main-colo-2" : "")}
             >
               Home
-            </NavLink>
+            </a>
           </li>
           <li
             className="relative cursor-pointer group hover:text-main-colo-2 duration-300"
@@ -194,19 +193,19 @@ function Navbar() {
             >
               <ul className="bg-white shadow-md flex flex-col gap-3 text-black w-44 py-5 px-10 rounded-md group-hover:border-b-4   border-main-colo-2">
                 <li className="hover:text-main-colo-2 duration-300 hover:translate-x-1 font-sans font-normal">
-                  <NavLink
-                    to="/about"
+                  <a
+                    href="#"
                     className={({ isActive }) =>
                       isActive ? "text-main-colo-2" : ""
                     }
                     onClick={() => setPagesDropdown(!PagesDropdown)}
                   >
                     About
-                  </NavLink>
+                  </a>
                 </li>
                 <li className="hover:text-main-colo-2 duration-300 hover:translate-x-1 font-sans font-normal">
-                  <NavLink
-                    to="/courses"
+                  <a
+                    href="#"
                     className={({ isActive }) =>
                       isActive ? "text-main-colo-2" : ""
                     }
@@ -214,44 +213,44 @@ function Navbar() {
                   >
                     {" "}
                     Course
-                  </NavLink>
+                  </a>
                 </li>
                 <li className="hover:text-main-colo-2 duration-300 hover:translate-x-1 font-sans font-normal">
-                  <NavLink
-                    to="/FAQ"
+                  <a
+                    href="#"
                     className={({ isActive }) =>
                       isActive ? "text-main-colo-2" : ""
                     }
                     onClick={() => setPagesDropdown(!PagesDropdown)}
                   >
                     FAQ
-                  </NavLink>
+                  </a>
                 </li>
                 <li className="hover:text-main-colo-2 duration-300 hover:translate-x-1 font-sans font-normal">
-                  <NavLink
-                    to="/pricing"
+                  <a
+                    href="#"
                     className={({ isActive }) =>
                       isActive ? "text-main-colo-2" : ""
                     }
                     onClick={() => setPagesDropdown(!PagesDropdown)}
                   >
                     Pricing
-                  </NavLink>
+                  </a>
                 </li>
                 <li className="hover:text-main-colo-2 duration-300 hover:translate-x-1 font-sans font-normal">
-                  <NavLink
-                    to="/career"
+                  <a
+                    href="#"
                     className={({ isActive }) =>
                       isActive ? "text-main-colo-2" : ""
                     }
                     onClick={() => setPagesDropdown(!PagesDropdown)}
                   >
                     Career
-                  </NavLink>
+                  </a>
                 </li>
                 <li className="hover:text-main-colo-2 duration-300 hover:translate-x-1 font-sans font-normal">
-                  <NavLink
-                    to="/event"
+                  <a
+                    href="#"
                     className={({ isActive }) =>
                       isActive ? "text-main-colo-2" : ""
                     }
@@ -259,11 +258,11 @@ function Navbar() {
                   >
                     {" "}
                     Events
-                  </NavLink>
+                  </a>
                 </li>
                 <li className="hover:text-main-colo-2 duration-300 hover:translate-x-1 font-sans font-normal">
-                  <NavLink
-                    to="/team"
+                  <a
+                    href="#"
                     className={({ isActive }) =>
                       isActive ? "text-main-colo-2" : ""
                     }
@@ -271,26 +270,26 @@ function Navbar() {
                   >
                     {" "}
                     Team
-                  </NavLink>
+                  </a>
                 </li>
               </ul>
             </div>
           </li>
           <li className="relative cursor-pointer group hover:text-main-colo-2 duration-300">
-            <NavLink
-              to="/blog"
+            <a
+              href="#"
               className={({ isActive }) => (isActive ? "text-main-colo-2" : "")}
             >
               Blog
-            </NavLink>
+            </a>
           </li>
           <li className="relative cursor-pointer group hover:text-main-colo-2 duration-300">
-            <NavLink
-              to="/contact"
+            <a
+              href="#"
               className={({ isActive }) => (isActive ? "text-main-colo-2" : "")}
             >
               Contact
-            </NavLink>
+            </a>
           </li>
         </ul>
         {/* menus end */}
@@ -357,21 +356,7 @@ function Navbar() {
           {/* login & register btn start */}
 
           {/* collapse btn start */}
-          <div
-            className="text-white  lg:hidden flex flex-col gap-2 cursor-pointer"
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            <div
-              className={`border-[1px] border-white w-7 transform transition-all duration-700 ${
-                isOpen ? "-rotate-45 translate-y-[5px]" : ""
-              }`}
-            ></div>
-            <div
-              className={`border-[1px] border-white w-7 transform transition-all duration-700 ${
-                isOpen ? "rotate-45 -translate-y-[5px]" : ""
-              }`}
-            ></div>
-          </div>
+          
           {/* collapse btn end */}
         </div>
         {/* btn div end */}
@@ -387,13 +372,13 @@ function Navbar() {
         {/* menus start  */}
         <ul className="flex flex-col  items-start gap-6  font-sans font-medium w-full ">
           <li className="relative cursor-pointer group hover:text-main-colo-2 duration-300">
-            <NavLink
-              to="/"
+            <a
+              href="#"
               className={({ isActive }) => (isActive ? "text-main-colo-2" : "")}
               onClick={() => setIsOpen(!isOpen)}
             >
               Home
-            </NavLink>
+            </a>
           </li>
           <li
             className="relative cursor-pointer group hover:text-main-colo-2 duration-300 w-full"
@@ -518,19 +503,19 @@ function Navbar() {
             >
               <ul className="bg-white flex flex-col gap-3 text-black w-full py-5 px-10 rounded-sm group-hover:border-b-2   border-main-colo-2">
                 <li className="hover:text-main-colo-2 duration-300 hover:translate-x-1 font-sans font-normal">
-                  <NavLink
-                    to="/about"
+                  <a
+                    href="#"
                     className={({ isActive }) =>
                       isActive ? "text-main-colo-2" : ""
                     }
                     onClick={() => setIsOpen(!isOpen)}
                   >
                     About
-                  </NavLink>
+                  </a>
                 </li>
                 <li className="hover:text-main-colo-2 duration-300 hover:translate-x-1 font-sans font-normal">
-                  <NavLink
-                    to="/courses"
+                  <a
+                    href="#"
                     className={({ isActive }) =>
                       isActive ? "text-main-colo-2" : ""
                     }
@@ -538,44 +523,44 @@ function Navbar() {
                   >
                     {" "}
                     Course
-                  </NavLink>
+                  </a>
                 </li>
                 <li className="hover:text-main-colo-2 duration-300 hover:translate-x-1 font-sans font-normal">
-                  <NavLink
-                    to="/FAQ"
+                  <a
+                  href="#"
                     className={({ isActive }) =>
                       isActive ? "text-main-colo-2" : ""
                     }
                     onClick={() => setIsOpen(!isOpen)}
                   >
                     FAQ
-                  </NavLink>
+                  </a>
                 </li>
                 <li className="hover:text-main-colo-2 duration-300 hover:translate-x-1 font-sans font-normal">
-                  <NavLink
-                    to="/pricing"
+                  <a
+                    href="#"
                     className={({ isActive }) =>
                       isActive ? "text-main-colo-2" : ""
                     }
                     onClick={() => setIsOpen(!isOpen)}
                   >
                     Pricing
-                  </NavLink>
+                  </a>
                 </li>
                 <li className="hover:text-main-colo-2 duration-300 hover:translate-x-1 font-sans font-normal">
-                  <NavLink
-                    to="/career"
+                  <a
+                    href="#"
                     className={({ isActive }) =>
                       isActive ? "text-main-colo-2" : ""
                     }
                     onClick={() => setIsOpen(!isOpen)}
                   >
                     Career
-                  </NavLink>
+                  </a>
                 </li>
                 <li className="hover:text-main-colo-2 duration-300 hover:translate-x-1 font-sans font-normal">
-                  <NavLink
-                    to="/event"
+                  <a
+                    href="#"
                     className={({ isActive }) =>
                       isActive ? "text-main-colo-2" : ""
                     }
@@ -583,11 +568,11 @@ function Navbar() {
                   >
                     {" "}
                     Events
-                  </NavLink>
+                  </a>
                 </li>
                 <li className="hover:text-main-colo-2 duration-300 hover:translate-x-1 font-sans font-normal">
-                  <NavLink
-                    to="/team"
+                  <a
+                    href="#"
                     className={({ isActive }) =>
                       isActive ? "text-main-colo-2" : ""
                     }
@@ -595,28 +580,28 @@ function Navbar() {
                   >
                     {" "}
                     Team
-                  </NavLink>
+                  </a>
                 </li>
               </ul>
             </div>
           </li>
           <li className="relative cursor-pointer group hover:text-main-colo-2 duration-300">
-            <NavLink
-              to="/blog"
+            <a
+              href="#"
               className={({ isActive }) => (isActive ? "text-main-colo-2" : "")}
               onClick={() => setIsOpen(!isOpen)}
             >
               Blog
-            </NavLink>
+            </a>
           </li>
           <li className="relative cursor-pointer group hover:text-main-colo-2 duration-300">
-            <NavLink
-              to="/contact"
+            <a
+              href="#"
               className={({ isActive }) => (isActive ? "text-main-colo-2" : "")}
               onClick={() => setIsOpen(!isOpen)}
             >
               Contact
-            </NavLink>
+            </a>
           </li>
         </ul>
         {/* menus end */}
